@@ -1,24 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TzG-9J-oOM">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LessonFour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tsc-C7-B4t">
+                                <rect key="frame" x="16" y="20" width="288" height="395"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="ПІБ: Костюк Андрій Сергійович." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyh-HK-X4E">
+                                        <rect key="frame" x="17.5" y="0.0" width="253.5" height="172.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата народження: 5 березня 2005 року." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRj-xj-OSY">
+                                        <rect key="frame" x="26.5" y="212.5" width="235.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Місце проживання: Україна, Сумська область, місто Шостка." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-jW-Owd">
+                                        <rect key="frame" x="15.5" y="293.5" width="257.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Освіта: учень 10 класу." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMN-fA-pkm">
+                                        <rect key="frame" x="53" y="374.5" width="182" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tsc-C7-B4t" secondAttribute="bottom" constant="16" id="HWF-h4-Rsx"/>
+                            <constraint firstItem="tsc-C7-B4t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Vbb-Jn-PJY"/>
+                            <constraint firstAttribute="trailing" secondItem="tsc-C7-B4t" secondAttribute="trailing" constant="16" id="lif-2u-rUm"/>
+                            <constraint firstItem="tsc-C7-B4t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uaK-Me-pao"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Main" image="rectangle.stack.person.crop.fill" catalog="system" selectedImage="rectangle.stack.person.crop.fill" id="I1a-XG-VWc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1136.25" y="123.75"/>
+        </scene>
+        <!--Information-->
+        <scene sceneID="FCx-Fp-YAM">
+            <objects>
+                <viewController id="N3x-LG-IWa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fZI-Ps-YWQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yk4-8I-0Cw">
+                                <rect key="frame" x="16" y="20" width="288" height="122"/>
+                                <string key="text">Я навчаюсь у шосткинському ліцеї. Моїм улюбленим предметом є математика. У майбутньому, я хочу стати програмістом. Я знайомий з такими мовами програмування: Python, Swift. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ekX-18-O6D"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Yk4-8I-0Cw" firstAttribute="leading" secondItem="ekX-18-O6D" secondAttribute="leading" constant="16" id="EkD-Yo-kUv"/>
+                            <constraint firstAttribute="trailing" secondItem="Yk4-8I-0Cw" secondAttribute="trailing" constant="16" id="OjA-pb-gxP"/>
+                            <constraint firstItem="Yk4-8I-0Cw" firstAttribute="top" secondItem="ekX-18-O6D" secondAttribute="top" constant="20" id="bm8-8E-swf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Information" image="list.bullet" catalog="system" selectedImage="list.bullet" id="u57-ZD-aAF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tnm-xi-44D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="964"/>
+        </scene>
+        <!--Else-->
+        <scene sceneID="Omw-BR-SX6">
+            <objects>
+                <viewController id="YH8-Tn-pEm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6o5-bk-gdP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="wPd-ag-dUD">
+                                <rect key="frame" x="16" y="20" width="288" height="75.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: kostukandrey@shostka-licey.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6L-36-JTG">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub: KostiukAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4V-5E-GJU">
+                                        <rect key="frame" x="0.0" y="55" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hXK-rs-V8g"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wPd-ag-dUD" firstAttribute="top" secondItem="hXK-rs-V8g" secondAttribute="top" constant="20" id="ihD-5h-PFn"/>
+                            <constraint firstItem="hXK-rs-V8g" firstAttribute="trailing" secondItem="wPd-ag-dUD" secondAttribute="trailing" constant="16" id="krS-yu-NYy"/>
+                            <constraint firstItem="wPd-ag-dUD" firstAttribute="leading" secondItem="hXK-rs-V8g" secondAttribute="leading" constant="16" id="pS6-UL-f5h"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Else" image="ellipsis" catalog="system" selectedImage="ellipsis" id="RC3-8l-xUE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6a-vM-P1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134.375" y="1800"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GNF-ZA-zoZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TzG-9J-oOM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aR9-jj-m5l">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ZLa-3h-SZ7"/>
+                        <segue destination="N3x-LG-IWa" kind="relationship" relationship="viewControllers" id="PMZ-kd-RqE"/>
+                        <segue destination="YH8-Tn-pEm" kind="relationship" relationship="viewControllers" id="qCm-cb-caE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Awu-Dl-wAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="964"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <image name="rectangle.stack.person.crop.fill" catalog="system" width="128" height="122"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
